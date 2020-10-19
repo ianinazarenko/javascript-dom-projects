@@ -1,0 +1,134 @@
+/* 
+============
+Font
+============
+*/
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;600&display=swap");
+
+/* 
+============
+Variables
+============
+*/
+:root {
+  --clr-dark: #222222;
+  --clr-accent: #49a6e9;
+  --clr-white: #fff;
+  --font: "Commissioner", sans-serif;
+  --transition: all 0.3s ease-out;
+  --radius: 0.5rem;
+  --spacing: 0.2rem;
+}
+
+/* 
+============
+Global
+============
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  background-color: #f1f5f8;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-dark);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--clr-accent);
+}
+
+h4 {
+  color: var(--clr-accent);
+}
+
+.btn {
+  border-radius: var(--radius);
+  border: 2px solid var(--clr-dark);
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: var(--transition);
+  margin: 2rem;
+  letter-spacing: var(--spacing);
+}
+
+.btn:hover {
+  background-color: var(--clr-dark);
+  color: var(--clr-white);
+}
+
+/* 
+============
+Navbar
+============
+*/
+nav {
+  display: grid;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
+  background-color: var(--clr-white);
+  box-shadow: 0 0.3rem 0.75rem rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.navbar__links {
+  display: flex;
+  justify-content: space-between;
+  width: 8rem;
+}
+
+/* 
+============
+Main
+============
+*/
+
+main {
+  height: calc(100vh - 3rem);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+h2 {
+  color: var(--clr-white);
+  background-color: var(--clr-dark);
+  padding: 1rem 2rem;
+  border-radius: var(--radius);
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+.color {
+  color: var(--clr-accent);
+  text-transform: lowercase;
+}

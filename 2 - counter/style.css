@@ -1,0 +1,119 @@
+/* 
+============
+Font
+============
+*/
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;600&display=swap");
+
+/* 
+============
+Variables
+============
+*/
+:root {
+  --clr-dark: #222222;
+  --clr-accent: #49a6e9;
+  --clr-white: #fff;
+  --font: "Commissioner", sans-serif;
+  --transition: all 0.3s ease-out;
+  --radius: 0.5rem;
+  --spacing: 0.2rem;
+}
+
+/* 
+============
+Global
+============
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  background-color: #f1f5f8;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-dark);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--clr-accent);
+}
+
+h4 {
+  color: var(--clr-accent);
+}
+
+.btn {
+  border-radius: var(--radius);
+  border: 2px solid var(--clr-dark);
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: var(--transition);
+  margin: 2rem;
+  letter-spacing: var(--spacing);
+}
+
+.btn:hover {
+  background-color: var(--clr-dark);
+  color: var(--clr-white);
+}
+
+/* 
+============
+Main
+============
+*/
+
+main {
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+#value {
+  font-size: 8rem;
+  font-weight: bold;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-container {
+    flex-direction: row;
+  }
+
+  .btn {
+    margin-bottom: 2rem;
+  }
+}

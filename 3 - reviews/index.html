@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- styles -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/78d7470de0.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Counter</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Our reviews</h1>
+        <div class="underline"></div>
+        <article class="review">
+          <div class="img-container">
+            <img src="./person-1.jpg" alt="person" id="person-img" />
+          </div>
+          <h4 id="author">Sara Johns</h4>
+          <p id="job">ux designer</p>
+          <p id="info">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis
+            unde libero cupiditate, suscipit accusamus corrupti tempora vel
+            excepturi laudantium sequi!
+          </p>
+          <!-- prev next buttons -->
+          <div class="btn-container">
+            <button class="prev-btn arrow-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-btn arrow-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <!-- random button -->
+          <button class="random-btn btn">surprise me</button>
+        </article>
+      </div>
+    </main>
+    <!-- javascript -->
+    <script src="./app.js"></script>
+  </body>
+</html>

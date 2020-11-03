@@ -50,4 +50,37 @@ const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
 const randomBtn = document.querySelector('.random-btn');
 
-document.addEventListener('DOMContentLoaded', function () {});
+let currentItem = 0;
+document.addEventListener('DOMContentLoaded', function () {
+  displayReview(currentItem);
+});
+
+prevBtn.addEventListener('click', function () {
+  currentItem--;
+  if (currentItem < 0) {
+    currentItem = reviews.length - 1;
+  }
+  displayReview(currentItem);
+});
+
+nextBtn.addEventListener('click', function(){
+  currentItem++;
+  if (currentItem > reviews.length - 1) {
+    currentItem = 0;
+  }
+  displayReview(currentItem);
+});
+
+randomBtn.addEventListener('click', function(){
+  currentItem = Math.floor(Math.random() * reviews.length);
+  displayReview(currentItem);
+});
+
+
+function displayReview(currentItem) {
+  const item = reviews[currentItem];
+  personImg.src = item.img;
+  author.textContent = item.name;
+  job.textContent = item.job;
+  info.textContent = item.text;
+}

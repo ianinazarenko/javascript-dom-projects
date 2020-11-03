@@ -180,7 +180,8 @@ h4 {
 }
 
 #info {
-  max-width: 85%;
+  max-width: 86%;
+  min-height: 9rem;
   margin: 1rem auto;
 }
 
@@ -199,13 +200,18 @@ h4 {
 }
 
 .random-btn {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   margin: 0 0 3rem 0;
   cursor: pointer;
+  letter-spacing: var(--spacing);
 }
 
 @media screen and (min-width: 992px) {
   .review {
     min-width: 56rem;
+  }
+
+  #info {
+    min-height: 4.5rem;
   }
 }

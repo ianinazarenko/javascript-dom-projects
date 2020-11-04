@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- styles -->
+        <link rel="stylesheet" href="./style.css" />
+        <!-- favicon -->
+        <link
+            rel="shortcut icon"
+            href="./favicon/favicon.ico"
+            type="image/x-icon"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./favicon/site.webmanifest" />
+        <script
+            src="https://kit.fontawesome.com/78d7470de0.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>Sidebar</title>
+    </head>
+
+    <body>
+        <button class="toggle">
+            <i class="fas fa-bars"> </i>
+        </button>
+
+        <!-- sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar__header">
+                <h2>Logo Here</h2>
+                <button class="sidebar__close" id="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <!-- links -->
+            <ul class="sidebar__links">
+                <a href="#">
+                    <li class="sidebar__link">Home</li>
+                </a>
+                <a href="#">
+                    <li class="sidebar__link">About</li>
+                </a>
+                <a href="#">
+                    <li class="sidebar__link">Projects</li>
+                </a>
+                <a href="#">
+                    <li class="sidebar__link">Contacts</li>
+                </a>
+            </ul>
+            <!-- social -->
+            <ul class="sidebar__social-icons">
+                <li class="sidebar__social-icon">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="sidebar__social-icon">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                </li>
+                <li class="sidebar__social-icon">
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="sidebar__social-icon">
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </aside>
+        <!-- javascript -->
+        <script src="./app.js"></script>
+    </body>
+</html>

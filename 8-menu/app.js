@@ -77,6 +77,8 @@ const menuItems = document.querySelector('.menu__items');
 document.addEventListener('DOMContentLoaded', displayMenuItems(menu));
 
 function displayMenuItems(menuList) {
+    menuItems.innerHTML = '';
+
     let displayingMenu = menuList.map(function (item) {
         return `<article class="menu__item">
                     <img src=${item.img} alt="om nom" />
@@ -100,6 +102,16 @@ const filters = document.querySelectorAll('.filter-btn');
 
 filters.forEach(function (filterBtn) {
     filterBtn.addEventListener('click', function (e) {
-        console.log(e.currentTarget);
-    })
-})
+        const filter = e.currentTarget.dataset.filter;
+
+        if (filter === 'all') {
+            displayMenuItems(menu);
+        } else {
+            const filteredMenu = menu.filter(function (item) {
+                return item.category === filter;
+            });
+
+            displayMenuItems(filteredMenu);
+        }
+    });
+});

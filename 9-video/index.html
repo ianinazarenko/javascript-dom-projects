@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- styles -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <script src="https://kit.fontawesome.com/78d7470de0.js" crossorigin="anonymous"></script>
+    <title>Video</title>
+</head>
+
+<body>
+    <div class="preloader">
+        <img src="./preloader.gif" alt="preloader">
+    </div>
+    <header>
+        <video class="video-container" muted loop autoplay>
+            <source src="./video-city.mp4" type="video/mp4">
+        </video>
+        <div class="header__text">
+            <h1>City View</h1>
+            <!-- <h1> New York City</h1>
+            <p>
+                Situated on one of the world's largest natural harbors, New York City is composed of five boroughs, each
+                of which is a county of the State of New York. The five boroughs—Brooklyn, Queens, Manhattan, the Bronx,
+                and Staten Island—were consolidated into a single city in 1898.
+            </p> -->
+        </div>
+        <input type="checkbox" class="video-toggle">
+    </header>
+    <!-- javascript -->
+    <script src="./app.js"></script>
+</body>
+
+</html>

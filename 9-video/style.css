@@ -1,0 +1,234 @@
+/* 
+============
+Font
+============
+*/
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap");
+
+/* 
+============
+Variables
+============
+*/
+:root {
+    --clr-dark: #222222;
+    --clr-cold-light-grey: #ccd4dc;
+    --clr-cold-grey: #7c839c;
+    --clr-accent: #49a6e9;
+    --clr-white: #fff;
+    --clr-gold: #bd9b3b;
+    --font: "Commissioner", sans-serif;
+    --font-cursive: "Henny Penny", cursive;
+    --transition: all 0.3s ease-out;
+    --radius: 0.5rem;
+    --spacing: 0.2rem;
+    --shadow: 0 0 0.8rem rgba(0, 0, 0, 0.1);
+}
+
+/* 
+============
+Global
+============
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+    background-color: #f1f5f8;
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-dark);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--clr-accent);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h4 {
+    color: var(--clr-accent);
+}
+
+p {
+    font-size: 0.875rem;
+}
+
+.btn {
+    border-radius: var(--radius);
+    border: 2px solid var(--clr-dark);
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: var(--transition);
+    margin: 2rem;
+    letter-spacing: var(--spacing);
+}
+
+.btn:hover {
+    background-color: var(--clr-dark);
+    color: var(--clr-white);
+}
+
+.underline {
+    width: 6rem;
+    height: 0.5rem;
+    background-color: var(--clr-accent);
+    margin: 0.5rem auto;
+}
+
+img {
+    width: 100%;
+    display: block;
+    /* object-fit: cover; */
+}
+
+video {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+/* 
+============
+Main
+============
+*/
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--clr-white);
+    z-index: 10;
+    display: grid;
+    place-items: center;
+    visibility: visible;
+    opacity: 1;
+    transition: var(--transition);
+}
+
+.hide-preloader {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -10;
+}
+
+.preloader img {
+    width: 10rem;
+    height: 10rem;
+}
+
+header {
+    height: 100vh;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.video-container {
+    height: 100%;
+    position: relative;
+    z-index: -2;
+
+}
+
+.header__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--clr-white);
+    text-align: center;
+    max-width: 40rem;
+}
+
+/* header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+
+} */
+
+.video-toggle {
+    position: absolute;
+    bottom: 3rem;
+    left: 3rem;
+    width: 6rem;
+    height: 3rem;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #03a9f4;
+    border-radius: 1.5rem;
+    box-shadow: inset 0 0 0.25rem rgba(0, 0, 0, 0.4);
+    transition: all 0.5s ease-in-out;
+}
+
+.video-toggle:checked {
+    background: #bbb;
+}
+
+.video-toggle::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 1rem;
+    content: '\f04c';
+    color: #03a9f4;
+    display: grid;
+    place-items: center;
+
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: #FFF;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(0.9);
+    transition: all 0.5s ease-in-out;
+    /* z-index: 1; */
+}
+
+.video-toggle:checked::before {
+    right: 3rem;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 1rem;
+    content: '\f04b';
+    color: #aaa;
+
+}

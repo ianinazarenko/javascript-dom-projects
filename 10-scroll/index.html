@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- styles -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <script src="https://kit.fontawesome.com/78d7470de0.js" crossorigin="anonymous"></script>
+    <title>Scroll</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header id="home">
+        <!-- navbar -->
+        <nav id="nav">
+            <div class="nav__container">
+                <div class="nav__header">
+                    <h4 class="logo">Logo</h4>
+                    <button class="nav__toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <div class="nav__links-container">
+                    <ul class="nav__links">
+                        <li><a href="#home" class="--scroll-link">Home</a></li>
+                        <li><a href="#about" class="--scroll-link">About</a></li>
+                        <li><a href="#services" class="--scroll-link">Services</a></li>
+                        <li><a href="#tours" class="--scroll-link">Tours</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="banner">
+            <div class="banner__container">
+                <h1>Scroll Project</h1>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, aut error. Doloribus,
+                    impedit! Sapiente dolor commodi necessitatibus, rerum doloremque quisquam?
+                </p>
+                <a href="#tours" class="btn --scroll-link">Explore tours</a>
+            </div>
+        </div>
+        <!-- end of navbar -->
+    </header>
+    <!-- end of header -->
+    <!-- section -->
+    <section id="about" class="--section">
+        <div class="--section-title">
+            <h2>About <span>us</span></h2>
+        </div>
+    </section>
+    <!-- end of section -->
+    <!-- section -->
+    <section id="services" class="--section">
+        <div class="--section-title">
+            <h2>Our <span>services</span></h2>
+        </div>
+    </section>
+    <!-- end of section -->
+    <!-- section -->
+    <section id="tours" class="--section">
+        <div class="--section-title">
+            <h2>Featured <span>tours</span></h2>
+        </div>
+    </section>
+    <!-- end of section -->
+    <!-- footer -->
+    <footer class="footer">
+        <p>
+            Copyright &copy; Travel Tour company <span id="date"></span>. All rights reserved.
+        </p>
+    </footer>
+    <!-- end of footer -->
+    <!-- back to top button -->
+    <a href="#home" class="--scroll-link top-link">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- javascript -->
+    <script src="./app.js"></script>
+</body>
+
+</html>

@@ -38,6 +38,10 @@ Global
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--font);
     background-color: #f1f5f8;
@@ -72,7 +76,7 @@ p {
 
 .btn {
     border-radius: var(--radius);
-    border: 2px solid var(--clr-dark);
+    border: 3px solid var(--clr-dark);
     font-size: 1rem;
     padding: 0.75rem 1rem;
     background-color: transparent;
@@ -82,12 +86,14 @@ p {
     margin: 2rem;
     letter-spacing: var(--spacing);
     display: inline-block;
+    background-color: var(--clr-dark);
+    color: var(--clr-white);
 }
 
 
 .btn:hover {
-    background-color: var(--clr-dark);
-    color: var(--clr-white);
+    background-color: transparent;
+    color: var(--clr-dark);
 }
 
 .underline {
@@ -144,9 +150,25 @@ nav {
     background: var(--clr-white);
 }
 
-.nav__links-container {
-    display: none;
+.--fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--clr-white);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
 }
+
+.nav__links-container {
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+/* .--show-links {
+    height: 14rem;
+} */
 
 .nav__container {
     width: 90vw;
@@ -207,7 +229,7 @@ nav {
     }
 
     .nav__links-container {
-        display: block;
+        height: auto;
     }
 
     .nav__links {
@@ -297,11 +319,17 @@ Back to Top
     height: 3rem;
     font-size: 2rem;
     border-radius: 0.75rem;
-    box-shadow: 0 0 0.2rem var(--clr-accent);
     transition: var(--transition);
+    visibility: hidden;
+    z-index: -10;
 }
 
 .top-link:hover {
     color: var(--clr-white);
     box-shadow: 0 0 0.8rem var(--clr-accent);
+}
+
+.--show-top-link {
+    visibility: visible;
+    z-index: 10;
 }

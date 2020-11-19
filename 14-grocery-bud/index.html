@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- styles -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <script src="https://kit.fontawesome.com/78d7470de0.js" crossorigin="anonymous"></script>
+    <title>Grocery Bud</title>
+</head>
+
+<body>
+    <section class=" --section-centered grocery">
+        <form class="grocery__form">
+            <p class="alert">&nbsp;</p>
+            <h3>Grocery bud</h3>
+            <div class="grocery__input-container">
+                <input type="text" class="grocery__input" placeholder="e.g. eggs">
+                <button class="grocery__btn-submit" id='submit-btn' type="submit">Submit</button>
+            </div>
+        </form>
+        <div class="grocery__list-container">
+            <div class="grocery__list">
+                <!-- <article class="grocery__item">
+                    <p class="grocery__title">item</p>
+                    <div class="grocery__controls"><button class="grocery__edit">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button class="grocery__delete">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </article> -->
+            </div>
+            <button class="btn grocery__btn-clear" id="clear-btn">Clear items</button>
+        </div>
+    </section>
+    <!-- javascript -->
+    <script src="./app.js"></script>
+</body>
+
+</html>

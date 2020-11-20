@@ -198,7 +198,7 @@ Main
 
 .grocery__btn-submit {
     border: none;
-    padding: 0.75rem 0.75rem;
+    padding: 0.75rem 0;
     background: var(--clr-dark);
     color: var(--clr-white);
     border-top-right-radius: var(--radius);
@@ -207,6 +207,7 @@ Main
     letter-spacing: var(--spacing);
     text-transform: uppercase;
     cursor: pointer;
+    min-width: 5.75rem;
 }
 
 .grocery__btn-submit:hover {
@@ -216,7 +217,7 @@ Main
 
 .grocery__list-container {
     visibility: hidden;
-    transition: var(--transition);
+    /* transition: var(--transition); */
     margin-top: 1.25rem;
 }
 
@@ -231,12 +232,8 @@ Main
     text-transform: capitalize;
     align-items: center;
     font-size: 1.25rem;
-    transition: var(--transition);
 }
 
-.grocery__item:hover {
-    background: d4edda;
-}
 
 .grocery__controls button {
     border: none;
@@ -270,9 +267,14 @@ Main
     margin: 0 auto;
     border: none;
     font-weight: normal;
+    background: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: var(--spacing);
 }
 
 .grocery__btn-clear:hover {
-    color: var(--clr-dark);
-    background: var(--clr-accent);
+    color: #721c24;
 }
